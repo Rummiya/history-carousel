@@ -15,8 +15,11 @@
 - **React** + **TypeScript**
 - **SCSS** для стилизации
 
-## 🚀 Запуск
+## 🚀 Установка и запуск
 
 ```bash
+git clone .
+cd history-carousel
+
 npm install
 npm run start
