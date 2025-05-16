@@ -1,0 +1,61 @@
+.wheel {
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 10;
+
+	width: 530px;
+	height: 530px;
+
+	border: 1px solid rgb(66, 86, 122, 10%);
+	border-radius: 50%;
+	transition: all 0.6s ease-in-out;
+
+	.dot {
+		position: absolute;
+		width: 6px;
+		height: 6px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background-color: var(--primary-color);
+		border: 1px solid var(--primary-color);
+		border-radius: 50%;
+
+		transition: all 0.2s ease-in-out;
+		cursor: pointer;
+
+		&.active,
+		&:hover {
+			background: #fff;
+			width: 56px;
+			height: 56px;
+
+			& > span {
+				display: block;
+			}
+		}
+
+		span {
+			display: none;
+			font-size: 20px;
+			color: var(--primary-color);
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.wheel {
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media (max-width: 768px) {
+	.wheel {
+		display: none;
+	}
+}

@@ -1,0 +1,59 @@
+.navigation {
+	margin-left: 80px;
+
+	.pagination {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.controllers {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			background: transparent;
+			border: 1px solid rgb(66, 86, 122, 50%);
+			border-radius: 50%;
+
+			padding: 18px 22px;
+			cursor: pointer;
+			transition: opacity 0.2s ease-in-out;
+
+			&:hover,
+			&:disabled {
+				opacity: 0.6;
+			}
+
+			&:first-child {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.navigation {
+		margin-left: 0;
+
+		.pagination {
+			margin-bottom: 10px;
+		}
+
+		.controllers {
+			gap: 8px;
+
+			button {
+				padding: 9px 11px;
+
+				img {
+					width: 6px;
+				}
+			}
+		}
+	}
+}
