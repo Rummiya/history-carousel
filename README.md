@@ -18,7 +18,7 @@
 ## 🚀 Установка и запуск
 
 ```bash
-git clone .
+git clone https://github.com/Rummiya/history-carousel.git 
 cd history-carousel
 
 npm install
